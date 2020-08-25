@@ -1,0 +1,123 @@
+body{
+	font-size: 150%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body{
+    height: auto;
+}
+body::before {
+	content: "";
+	background-image: url(pics/book-stack-books-education-48126.jpg);
+	opacity: 0.5;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+    z-index: -1;
+	background-size: cover;
+	height: 185%;
+}
+#topnavbar{
+    background-color: #172b57;
+    height: 100px;
+    text-align: center;
+    color: white;
+    font-size: 130%;
+}
+.linex{
+    width: 70%;
+    padding: 0px;
+    margin: 5px;
+    margin-left: 15%;
+}
+.golden_yellow{
+    color: rgba(184, 143, 1, 1);
+}
+.big_head{
+    font-size: 150%;
+}
+.logo{
+    width: 70%;
+    height: auto;
+    margin-bottom: 25px;
+}
+.headings{
+    font-weight: bold;
+}
+.under_line{
+    font-weight: bold;
+    padding-right: 20px;
+    width: 100%;
+    border-bottom: 3px double;
+    border-color: rgba(184, 143, 1, 1);
+    padding: 1px;
+}
+.bold_minihd{
+    font-weight: bold;
+}
+ul{
+    list-style-type: none;
+}
+.col_three{
+    background-color: rgba(153, 153, 153, .7);
+    padding: 10px;
+}
+.bottom_navbar {
+    overflow: hidden;
+    background-color: rgba(0, 1, 81, .9);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: white;
+    font-size: 125%;
+}
+.float_left{
+    float: right;
+}
+.sidenav {
+    height: 91.7%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #172b57;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: rgba(184, 143, 1, 1);
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}

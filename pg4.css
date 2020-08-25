@@ -1,0 +1,92 @@
+body{
+	font-size: 180%;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.body_div{
+    height: 155vh
+}
+.body_div::before {
+	content: "";
+	background-image: url(pics/ballpens-desk-notebooks-867483_2.jpg);
+	opacity: 0.5;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+    z-index: -1;
+	background-size: cover;
+	height: 155%;
+}
+.logo{
+    width: 150px;
+    height: auto;
+}
+table{
+	border-collapse: collapse;
+	width: 90%;
+}
+table th, table td{
+	border: 1px solid black;
+	padding: 18px;
+}
+table tr:nth-child(even){
+	background-color: rgba(184, 143, 1, .5); 
+}
+table tr{
+	background-color: rgba(221, 221, 221, .5);
+}
+table th{
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: center;
+	background-color: #000250;
+	color: white;
+}
+table tr:last-child{
+	background-color: rgba(0, 2, 80, .5);
+	text-align: center;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #000250;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: rgba(184, 143, 1, 1);
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
